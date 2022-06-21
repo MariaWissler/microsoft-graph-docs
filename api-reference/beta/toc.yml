@@ -15181,6 +15181,7 @@ items:
       - name: Overview
         href: resources/teams-api-overview.md
       - name: Apps
+        items:
         - name: App
           items:
           - name: App in catalog
