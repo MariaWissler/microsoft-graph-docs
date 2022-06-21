@@ -15344,7 +15344,7 @@ items:
             href: resources/chatmessage.md
             items:
             - name: List channel messages
-                href: api/channel-list-messages.md
+              href: api/channel-list-messages.md
             - name: List channel messages delta
               href: api/chatmessage-delta.md
             - name: List message replies
@@ -15509,7 +15509,8 @@ items:
             href: api/team-completemigration.md
           - name: List permission grants
             href: api/team-list-permissiongrants.md
-      - name: Meetings and calling       
+      - name: Meetings and calling
+        items:       
         - name: Calls
           items:
           - name: Application actions
@@ -15550,6 +15551,8 @@ items:
               href: api/call-transfer.md
             - name: Keep alive
               href: api/call-keepalive.md
+            - name: Log teleconference device quality data
+              href: api/call-logteleconferencedevicequality.md 
             - name: IVR scenarios
               href: resources/calls-api-ivr-overview.md
               items:
@@ -15627,8 +15630,6 @@ items:
               href: resources/callrecords-directroutinglogrow.md
             - name: List direct routing calls
               href: api/callrecords-callrecord-getdirectroutingcalls.md
-          items:
-          items:
         - name: Online meetings
           items:
           - name: Online meeting
