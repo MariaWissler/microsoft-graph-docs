@@ -15771,7 +15771,7 @@ items:
             href: api/openshift-get.md
           - name: Update
             href: api/openshift-update.md
-            - name: Delete
+          - name: Delete
             href: api/openshift-delete.md
         - name: Open shift change request
           href: resources/openshiftchangerequest.md
