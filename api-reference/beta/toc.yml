@@ -15533,8 +15533,8 @@ items:
             - name: Delete
               href: api/audioroutinggroup-delete.md
           - name: Call
-            items:
             href: resources/call.md
+            items:
             - name: Create
               href: api/application-post-calls.md
             - name: Get
