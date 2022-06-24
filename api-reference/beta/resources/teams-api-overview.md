@@ -11,28 +11,39 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more.
+Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more. Using Microsoft graph:
+
+- Create and manage Teams, Groups and Channels.
+- Add teamsTabs, manage or install teamsApp in the Microsoft Teams app catalog.
+- Create channels, chats to send and receive chatMessages.
+- Use teamworkTags to classify users or groups bases on common attributes whitin a team. 
+- Create and receive calls, callRecords or retrieve meeting coordinates.
+- Connect bots to calls and implement interactive voice response (IVR).
+- Create and retrieve onlineMeetings or check users presence and activity.
+- Create and manage workforceIntegration with shifts, schedules, timeCards or timeOff in your organization. 
 
 ## Key resources in Microsoft Teams
 
-| Resource | Methods |
-|:---------------|:--------|
-|[team](../resources/team.md)| [List your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [list associated teams](../api/associatedteaminfo-list.md), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md), [clone](../api/team-clone.md), [archive](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [remove owner](../api/group-delete-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) |
-|[channel](../resources/channel.md)|[List](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [update](../api/channel-patch.md), [delete](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[List](../api/channel-list-tabs.md), [create](../api/channel-post-tabs.md), [read](../api/channel-get-tabs.md), [update](../api/channel-patch-tabs.md), [delete](../api/channel-delete-tabs.md) |
-|[teamsApp](../resources/teamsapp.md)|[List](../api/appcatalogs-list-teamsapps.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/team-list-installedapps.md), [install](../api/team-post-installedapps.md), [upgrade](../api/team-delete-installedapps.md), [remove](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [List in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-messages.md), [send](../api/chatmessage-post.md), [read in channel](../api/chatmessage-get.md), [read in chat](../api/chatmessage-get.md)|
-|[chat](../resources/chat.md)| [List](../api/chat-list.md), [read](../api/chat-get.md),
-|[call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md), [mute all participants](../api/participant-muteall.md) |
-|[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
-|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [replace](../api/schedulinggroup-put.md), [delete](../api/schedulinggroup-delete.md) |
-|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md), [replace](../api/shift-put.md), [delete](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [replace](../api/timeoffreason-put.md), [delete](../api/timeoffreason-delete.md) |
-|[tag](../resources/teamworkTag.md)|[List](../api/teamworkTag-list.md), [create](../api/teamworkTag-post.md), [get](../api/teamworkTag-get.md), [update](../api/teamworkTag-update.md), [delete](../api/teamworkTag-delete.md)|
-|[tagMember](../resources/teamworkTagMember.md)|[List](../api/teamworkTagMember-list.md), [create](../api/teamworkTagMember-post.md), [get](../api/teamworkTagMember-get.md), [delete](../api/teamworkTagMember-delete.md)|
+| Resource | REST resources | See also |
+:-----------|:--------|:--------|
+|team| [list your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md) | [team](../resources/team.md) |
+|group| [add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) | [group](../resources/group.md) |
+|channel| [list](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [delete](../api/channel-delete.md) | [channel](../resources/channel.md) |
+|teamsTab| [list](../api/channel-list-tabs.md), [create](../api/channel-post-tabs.md), [read](../api/channel-get-tabs.md), [delete](../api/channel-delete-tabs.md) | [teamsTab](../resources/teamstab.md) |
+|teamsApp| [list](../api/appcatalogs-list-teamsapps.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
+|teamsAppInstallation| [list](../api/team-list-installedapps.md), [install](../api/team-post-installedapps.md), [upgrade](../api/team-delete-installedapps.md), [remove](../api/team-delete-installedapps.md) | [teamsApp](../resources/teamsapp.md) |
+|chatMessage| [list in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-messages.md), [send](../api/chatmessage-post.md), [read in channel](../api/chatmessage-get.md), [read in chat](../api/chatmessage-get.md) | [chatMessage](../resources/chatmessage.md) |
+|chat| [list](../api/chat-list.md), [read](../api/chat-get.md)| [chat](../api/chat.md) | 
+|call| [answer](../api/call-answer.md), [reject](../api/call-reject.md),
+, [mute](../api/call-mute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [invite participants](../api/participant-invite.md) | [call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
+|online meetings|[attendance report](../resources/meetingattendancereport.md), [meeting registration](../resources/meetingregistration.md), [external meeting registration](../resources/externalmeetingregistration.md) | [online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
+|schedule| [create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) | [schedule](../resources/schedule.md) |
+|schedulingGroup| [create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [delete](../api/schedulinggroup-delete.md) | [schedulingGroup](../resources/schedulinggroup.md) |
+|shift| [create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md, [delete](../api/shift-delete.md) | [shift](../resources/shift.md) |
+|timeOff| [create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) | [timeOff](../resources/timeoff.md) |
+|timeOffReason| [create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [delete](../api/timeoffreason-delete.md) | [timeOffReason](../resources/timeoffreason.md) |
+|tag| [list](../api/teamworkTag-list.md), [create](../api/teamworkTag-post.md), [get](../api/teamworkTag-get.md), [update](../api/teamworkTag-update.md), [delete](../api/teamworkTag-delete.md) | [tag](../resources/teamworkTag.md) |
+|tagMember| [list](../api/teamworkTagMember-list.md), [create](../api/teamworkTagMember-post.md), [get](../api/teamworkTagMember-get.md), [delete](../api/teamworkTagMember-delete.md) | [tagMember](../resources/teamworkTagMember.md) |
 
 ## Microsoft Teams limits
 
