@@ -14,13 +14,13 @@ doc_type: conceptualPageType
 Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, Shifts schedules, and more. Using Microsoft graph:
 
 - Create and manage Teams, Groups and Channels.
-- Add teamsTabs, manage or install teamsApp in the Microsoft Teams app catalog.
-- Create channels, chats to send and receive chatMessages.
-- Use teamworkTags to classify users or groups bases on common attributes whitin a team. 
-- Create and receive calls, callRecords or retrieve meeting coordinates.
+- Add Tabs, manage or install apps in the Microsoft Teams app catalog.
+- Create channels, chats to send and receive chat messages.
+- Use Tags to classify users or groups bases on common attributes whitin a team. 
+- Create and receive calls, call records or retrieve meeting coordinates.
 - Connect bots to calls and implement interactive voice response (IVR).
-- Create and retrieve onlineMeetings or check users presence and activity.
-- Create and manage workforceIntegration with shifts, schedules, timeCards or timeOff in your organization. 
+- Create and retrieve online meetings or check users presence and activity.
+- Create and manage Workforce integration with shifts, schedules, time cards or time off in your organization. 
 
 ## Key resources in Microsoft Teams
 
@@ -34,8 +34,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |teamsAppInstallation| [list](../api/team-list-installedapps.md), [install](../api/team-post-installedapps.md), [upgrade](../api/team-delete-installedapps.md), [remove](../api/team-delete-installedapps.md) | [teamsApp](../resources/teamsapp.md) |
 |chatMessage| [list in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-messages.md), [send](../api/chatmessage-post.md), [read in channel](../api/chatmessage-get.md), [read in chat](../api/chatmessage-get.md) | [chatMessage](../resources/chatmessage.md) |
 |chat|[list](../api/chat-list.md), [read](../api/chat-get.md)| [chat](../api/chat.md) | 
-|call| [answer](../api/call-answer.md), [reject](../api/call-reject.md),
-, [mute](../api/call-mute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [invite participants](../api/participant-invite.md) | [call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
+|call| [answer](../api/call-answer.md), [reject](../api/call-reject.md), [mute](../api/call-mute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [invite participants](../api/participant-invite.md) | [call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
 |online meetings|[attendance report](../resources/meetingattendancereport.md), [meeting registration](../resources/meetingregistration.md), [external meeting registration](../resources/externalmeetingregistration.md) | [online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
 |schedule| [create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) | [schedule](../resources/schedule.md) |
 |schedulingGroup| [create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [delete](../api/schedulinggroup-delete.md) | [schedulingGroup](../resources/schedulinggroup.md) |
