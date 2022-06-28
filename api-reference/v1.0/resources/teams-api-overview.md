@@ -15,7 +15,7 @@ Using Microsoft graph:
 
 - Create and manage Teams, Groups and Channels.
 - Add Tabs, manage or install apps in the Microsoft Teams app catalog.
-- Create channels, chats to send and receive chat messages. 
+- Create channels and chats to send and receive chat messages. 
 - Create and receive calls, call records or retrieve meeting coordinates.
 - Connect bots to calls and implement interactive voice response (IVR).
 - Create and retrieve online meetings or check users presence and activity.
@@ -39,7 +39,7 @@ Using Microsoft graph:
 |online meetings|[create](../api/application-post-onlinemeetings.md), [update](../api/onlinemeeting-update.md), [attendance report](../resources/meetingattendancereport.md) | [online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
 |schedule| [create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) | [schedule](../resources/schedule.md) |
 |schedulingGroup| [create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [delete](../api/schedulinggroup-delete.md) | [schedulingGroup](../resources/schedulinggroup.md) |
-|shift| [create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md, [delete](../api/shift-delete.md) | [shift](../resources/shift.md) |
+|shift| [create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md), [delete](../api/shift-delete.md) | [shift](../resources/shift.md) |
 |timeOff| [create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) | [timeOff](../resources/timeoff.md) |
 |timeOffReason| [create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [delete](../api/timeoffreason-delete.md) | [timeOffReason](../resources/timeoffreason.md) |
 
