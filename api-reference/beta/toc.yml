@@ -15372,12 +15372,12 @@ items:
           - name: Pinned chat message
             href: resources/pinnedChatMessageInfo.md
             items:
-          - name: List pinned messages
-            href: api/chat-list-pinnedmessages.md
-          - name: Pin message
-            href: api/chat-post-pinnedmessages.md
-          - name: Unpin message
-            href: api/chat-delete-pinnedmessages.md
+            - name: List pinned messages
+              href: api/chat-list-pinnedmessages.md
+            - name: Pin message
+              href: api/chat-post-pinnedmessages.md
+            - name: Unpin message
+              href: api/chat-delete-pinnedmessages.md
         - name: Channel
           href: resources/channel.md
           items:
