@@ -6900,28 +6900,26 @@ items:
             - name: Update recording status
               href: api/call-updaterecordingstatus.md
           - name: Call
+            href: resources/call.md
             items:
-            - name: Call
-              href: resources/call.md
-              items:
-              - name: Create
-                href: api/application-post-calls.md
-              - name: Get
-                href: api/call-get.md
-              - name: Delete/hang up
-                href: api/call-delete.md
-              - name: Answer
-                href: api/call-answer.md
-              - name: Reject
-                href: api/call-reject.md
-              - name: Redirect
-                href: api/call-redirect.md
-              - name: Transfer
-                href: api/call-transfer.md
-              - name: Keep alive
-                href: api/call-keepalive.md
-              - name: Log teleconference device quality data
-                href: api/call-logteleconferencedevicequality.md  
+            - name: Create
+              href: api/application-post-calls.md
+            - name: Get
+              href: api/call-get.md
+            - name: Delete/hang up
+              href: api/call-delete.md
+            - name: Answer
+              href: api/call-answer.md
+            - name: Reject
+              href: api/call-reject.md
+            - name: Redirect
+              href: api/call-redirect.md
+            - name: Transfer
+              href: api/call-transfer.md
+            - name: Keep alive
+              href: api/call-keepalive.md
+            - name: Log teleconference device quality data
+              href: api/call-logteleconferencedevicequality.md  
           - name: IVR scenarios
             href: resources/calls-api-ivr-overview.md
             items:
@@ -6933,6 +6931,10 @@ items:
               href: api/call-cancelmediaprocessing.md
             - name: Subscribe to tone
               href: api/call-subscribetotone.md
+          - name: Content sharing session
+            items:      
+            - name: Change screen sharing role
+              href: api/call-changescreensharingrole.md    
           - name: Participant
             href: resources/participant.md
             items:
@@ -6950,10 +6952,6 @@ items:
               href: api/participant-startholdmusic.md
             - name: Stop hold music
               href: api/participant-stopholdmusic.md
-          - name: Content sharing session
-            items:      
-            - name: Change screen sharing role
-              href: api/call-changescreensharingrole.md
         - name: Call records
           items:
           - name: Overview
