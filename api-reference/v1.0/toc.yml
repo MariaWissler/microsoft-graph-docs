@@ -6982,8 +6982,8 @@ items:
         - name: Online meetings
           items:
           - name: Online meeting
-          href: resources/onlinemeeting.md
-          items:
+            href: resources/onlinemeeting.md
+            items:
             - name: Create
               href: api/application-post-onlinemeetings.md
             - name: Get
