@@ -15,7 +15,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 
 - Create and manage Teams, Groups and Channels.
 - Add Tabs, manage or install apps in the Microsoft Teams app catalog.
-- Create channels, chats to send and receive chat messages.
+- Create channels and chats to send and receive chat messages.
 - Use Tags to classify users or groups bases on common attributes whitin a team. 
 - Create and receive calls, call records or retrieve meeting coordinates.
 - Connect bots to calls and implement interactive voice response (IVR).
@@ -39,7 +39,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |tagMember| [list](../api/teamworkTagMember-list.md), [create](../api/teamworkTagMember-post.md), [get](../api/teamworkTagMember-get.md), [delete](../api/teamworkTagMember-delete.md) | [tagMember](../resources/teamworkTagMember.md) |
 |schedule| [create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) | [schedule](../resources/schedule.md) |
 |schedulingGroup| [create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [delete](../api/schedulinggroup-delete.md) | [schedulingGroup](../resources/schedulinggroup.md) |
-|shift| [create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md, [delete](../api/shift-delete.md) | [shift](../resources/shift.md) |
+|shift| [create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md), [delete](../api/shift-delete.md) | [shift](../resources/shift.md) |
 |timeOff| [create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) | [timeOff](../resources/timeoff.md) |
 |timeOffReason| [create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [delete](../api/timeoffreason-delete.md) | [timeOffReason](../resources/timeoffreason.md) |
 
