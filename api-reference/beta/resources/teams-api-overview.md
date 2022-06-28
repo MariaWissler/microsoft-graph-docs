@@ -27,7 +27,6 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 | Resource | REST resources | See also |
 :-----------|:--------|:--------|
 |team| [list your teams](../api/user-list-joinedteams.md), [list all teams](/graph/teams-list-all-teams), [create](../api/team-put-teams.md), [read](../api/team-get.md), [update](../api/team-update.md), [delete](../api/group-delete.md) | [team](../resources/team.md) |
-|group| [add member](../api/group-post-members.md), [remove member](../api/group-delete-members.md), [add owner](../api/group-post-owners.md), [get files](drive.md), [get notebook](../resources/notebook.md), [get plans](plannergroup.md), [get calendar](event.md) | [group](../resources/group.md) |
 |channel| [list](../api/channel-list.md), [create](../api/channel-post.md), [read](../api/channel-get.md), [delete](../api/channel-delete.md) | [channel](../resources/channel.md) |
 |teamsTab| [list](../api/channel-list-tabs.md), [create](../api/channel-post-tabs.md), [read](../api/channel-get-tabs.md), [delete](../api/channel-delete-tabs.md) | [teamsTab](../resources/teamstab.md) |
 |teamsApp| [list](../api/appcatalogs-list-teamsapps.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
@@ -36,13 +35,14 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |chat|[list](../api/chat-list.md), [read](../api/chat-get.md), [list chat members](../api/chat-list-members.md)| [chat](../resources/chat.md) | 
 |call| [answer](../api/call-answer.md), [reject](../api/call-reject.md), [mute](../api/call-mute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [invite participants](../api/participant-invite.md) | [call](../resources/call.md), [call records](../resources/callrecords-api-overview.md) |
 |online meetings|[attendance report](../resources/meetingattendancereport.md), [meeting registration](../resources/meetingregistration.md), [external meeting registration](../resources/externalmeetingregistration.md) | [online meetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) |
+|tag| [list](../api/teamworkTag-list.md), [create](../api/teamworkTag-post.md), [get](../api/teamworkTag-get.md), [delete](../api/teamworkTag-delete.md) | [tag](../resources/teamworkTag.md) |
+|tagMember| [list](../api/teamworkTagMember-list.md), [create](../api/teamworkTagMember-post.md), [get](../api/teamworkTagMember-get.md), [delete](../api/teamworkTagMember-delete.md) | [tagMember](../resources/teamworkTagMember.md) |
 |schedule| [create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) | [schedule](../resources/schedule.md) |
 |schedulingGroup| [create](../api/schedule-post-schedulinggroups.md), [list](../api/schedule-list-schedulinggroups.md), [get](../api/schedulinggroup-get.md), [delete](../api/schedulinggroup-delete.md) | [schedulingGroup](../resources/schedulinggroup.md) |
 |shift| [create](../api/schedule-post-shifts.md), [list](../api/schedule-list-shifts.md), [get](../api/shift-get.md, [delete](../api/shift-delete.md) | [shift](../resources/shift.md) |
 |timeOff| [create](../api/schedule-post-timesoff.md), [list](../api/schedule-list-timesoff.md), [get](../api/timeoff-get.md), [replace](../api/timeoff-put.md), [delete](../api/timeoff-delete.md) | [timeOff](../resources/timeoff.md) |
 |timeOffReason| [create](../api/schedule-post-timeoffreasons.md), [list](../api/schedule-list-timeoffreasons.md), [get](../api/timeoffreason-get.md), [delete](../api/timeoffreason-delete.md) | [timeOffReason](../resources/timeoffreason.md) |
-|tag| [list](../api/teamworkTag-list.md), [create](../api/teamworkTag-post.md), [get](../api/teamworkTag-get.md), [update](../api/teamworkTag-update.md), [delete](../api/teamworkTag-delete.md) | [tag](../resources/teamworkTag.md) |
-|tagMember| [list](../api/teamworkTagMember-list.md), [create](../api/teamworkTagMember-post.md), [get](../api/teamworkTagMember-get.md), [delete](../api/teamworkTagMember-delete.md) | [tagMember](../resources/teamworkTagMember.md) |
+
 
 ## Microsoft Teams limits
 
@@ -73,7 +73,7 @@ The following are the differences at the API level between teams and groups:
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md) and [chatMessage](../resources/chatmessage.md) resources.
 - Group conversations are available only to Microsoft 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources.
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
-- [Calling and online meeting APIs](./communications-api-overview.md) apply only to Microsoft Teams.
+- [Calling](../resources/call.md) and [online meeting](../resources/onlinemeeting.md) APIs apply only to Microsoft Teams.
 - See also the [known issues](/graph/known-issues) for these APIs.
 
 >**Note:** If you use the groups API in a [Microsoft Teams app](/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](/microsoftteams/platform/resources/microsoft-graph).
