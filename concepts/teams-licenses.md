@@ -21,7 +21,7 @@ In the future, apps will also be required to pay for the messages they consume b
 
 - [`model=B`](#modelb-requirements) is restricted to applications that do not perform a 
 [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms). 
-[`model=B`](#modelb-requirements) starting July 5, 2022, billing events will reach general availability. 
+Starting July 5, 2022, billing events will reach general availability. 
 There are no licensing requirements for `model=B`.
 
 - [Evaluation Mode (default)](#evaluation-mode-default-requirements)
@@ -53,7 +53,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | N/A | None | $0.00075 per message |  |
 | [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | N/A | None  | $0.00075 per notification | |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) |  N/A | None | $0.00075 per message |  Minimum charge of 1 message per API request. |
-|  [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Minimum charge of 1 message per API request. |
+| [Get messages across all channels](/graph/api/channel-getallmessages)|  N/A | None | $0.00075 per message | Minimum charge of 1 message per API request. |
 
 ## Evaluation mode (default) requirements
 
@@ -67,14 +67,6 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 
 In evaluation mode, seeded capacity is shared across all APIs. 
 When seeded capacity is exceeded, API calls with licensing and payment requirements will fail with a 402 error code, and subscriptions with licensing and payment requirements will not send change notifications.
-
-| Error type | Status code | Error message |
-|:-----------|:-----------|:-----------------|
-|E5 license requirement not met| 402 (Payment Required) |`User '{userId}' needs a valid license to access this API.`, `Tenant {tenantId} needs a valid license to access this API.`|
-|Model B is not supported for Patch API| 402 (Payment Required) |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
-|Evaluation capacity exceeded|402 (Payment Required)|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
-
-> **Note**: A successful API call does not mean that the proper licensing is in place. Not all license violations can be detected, and grace periods might be granted in some cases.
 
 ## Required licenses for `model=A` 
 
@@ -108,10 +100,15 @@ For change notifications, messages sent by unlicensed users will not generate a 
 Similarly, API calls and change notifications used in evaluation mode 
 in excess of the seeded capacity will fail.
 
+| Error type | Status code | Error message |
+|:-----------|:-----------|:-----------------|
+|E5 license requirement not met| 402 (Payment Required) |`User '{userId}' needs a valid license to access this API.`, `Tenant {tenantId} needs a valid license to access this API.`|
+|Model B is not supported for Patch API| 402 (Payment Required) |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
+|Evaluation capacity exceeded|402 (Payment Required)|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
+
+
 > **Note**: A successful API call does not mean that the proper licensing is in place. 
-> Not all license violations can be detected, and grace periods might be granted in some cases.
-> Similarly, API success in evaluation mode does not guarantee the call is within seeded capacity
-> as grace periods may be granted in some cases.
+> Similarly, API success in evaluation mode does not guarantee the call is within seeded capacity.
 
 ## Seeded capacity
 
