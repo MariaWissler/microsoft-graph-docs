@@ -27,7 +27,7 @@ There are no licensing requirements for `model=B`.
 enables access to APIs with limited usage per requesting application for evaluation purposes. 
 Change notifications will not be sent if the limit is exceeded.
 
-[!NOTE] Starting July 5, 2022, billing events for these APIs reach general availability as communicated in this [announcement](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az). See also [recent updates](#recent-updates-and-price-for-additional-use) for more details.
+[!NOTE] Starting July 5, 2022, billing events for these APIs reach general availability as communicated in this [announcement](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). We require applications to complete this [form](https://aka.ms/teamsgraph/protectedApis_az). See [recent updates](#recent-updates-and-price-for-additional-use) for more details.
 
 ## `model=A` requirements
 
@@ -37,7 +37,7 @@ of the [product terms for Microsoft Azure Services](https://www.microsoft.com/li
 |API                   | Who needs a [license](#required-licenses-for-modela)  | Seeded capacity | [Price for additional use](#price-for-additional-use) | Notes |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [chatMessage change notifications](/graph/api/subscription-post-subscriptions) | Message sender | 800 messages per user per month per app | $0.00075 per message | Seeded capacity is shared with conversationMember change notifications |
-| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.00075 per notification | Seeded capacity is shared with chatMessage change notifications |
+| [conversationMember change notifications](/graph/api/subscription-post-subscriptions) | Any user in the tenant | 800 notifications per user per month per app  | $0.0007 per notification | Seeded capacity is shared with chatMessage change notifications |
 | [Get messages across all chats for user](/graph/api/chats-getallmessages) | Named user | 1600 messages per user per month per app | $0.00075 per message | The named user is the user identified in the GET request URL. Minimum charge of 1 message per API request. Seeded capacity is shared with channel export. |
 | [Get messages across all channels](/graph/api/channel-getallmessages)| Any team member | 1600 messages per user per month per app | $0.00075 per message |  Minimum charge of 1 message per API request. Seeded capacity is shared with chat export. |
 | [Updating a chatMessage's policyViolation](/graph/api/chatmessage-update) |  Message sender |  800 messages per user per month per app | $0.00075 per message |
